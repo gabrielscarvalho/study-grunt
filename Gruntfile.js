@@ -6,6 +6,9 @@ var taskTypescript = require("./Gruntfile/task.typescript");
 var taskJshint = require("./Gruntfile/task.jshint");
 var taskUglify = require("./Gruntfile/task.uglify");
 
+var htmlHint = require("./Gruntfile/task.html.hint");
+var htmlMin = require("./Gruntfile/task.html.min");
+
 
 
 module.exports = function (grunt) {
@@ -21,7 +24,8 @@ module.exports = function (grunt) {
 	taskTypescript.loadConfig(config);
 	taskJshint.loadConfig(config);
 	taskUglify.loadConfig(config);
-
+	htmlHint.loadConfig(config);
+	htmlMin.loadConfig(config);
 
 
 	//INIT CONFIG
@@ -33,5 +37,6 @@ module.exports = function (grunt) {
 	taskTypescript.loadTask(grunt);
 	taskJshint.loadTask(grunt);
 	taskUglify.loadTask(grunt);
-
+	htmlHint.loadTask(grunt);
+	htmlMin.loadTask(grunt);
 };

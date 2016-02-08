@@ -1,5 +1,5 @@
 /**
- * This module imports the jshint
+ * This module imports the uglify
  * Método: grunt uglify;
  *
  */
