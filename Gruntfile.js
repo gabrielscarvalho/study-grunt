@@ -10,6 +10,9 @@ var htmlHint = require("./Gruntfile/task.html.hint");
 var htmlMin = require("./Gruntfile/task.html.min");
 
 
+var taskGit = require("./Gruntfile/task.git");
+
+
 
 module.exports = function (grunt) {
 
@@ -26,6 +29,7 @@ module.exports = function (grunt) {
 	taskUglify.loadConfig(config);
 	htmlHint.loadConfig(config);
 	htmlMin.loadConfig(config);
+	taskGit.loadConfig(config);
 
 
 	//INIT CONFIG
@@ -39,4 +43,6 @@ module.exports = function (grunt) {
 	taskUglify.loadTask(grunt);
 	htmlHint.loadTask(grunt);
 	htmlMin.loadTask(grunt);
+	taskGit.loadTask(grunt);
+
 };

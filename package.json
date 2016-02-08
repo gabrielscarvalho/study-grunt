@@ -11,6 +11,7 @@
     "grunt-contrib-less": "^1.2.0",
     "grunt-contrib-uglify": "^0.11.1",
     "grunt-htmlhint": "^0.9.12-fix",
-    "grunt-typescript": "^0.8.0"
+    "grunt-typescript": "^0.8.0",
+    "shelljs": "^0.6.0"
   }
 }
