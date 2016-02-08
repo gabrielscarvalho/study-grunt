@@ -10,10 +10,12 @@
   };
 
   controller.loadConfig = function(config){
-	config.clean = {
-		output: ['toBeCleaned/*']
-	}
-	return config;
+  	var helperConfig = require("./helper.config");
+
+  	return helperConfig.merge(config, 'clean',{
+		output: ['tasks/toBeCleaned/*']
+	});
+
   };
 
 
