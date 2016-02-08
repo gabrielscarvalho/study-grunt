@@ -11,8 +11,7 @@ module.exports = function (grunt) {
 
 	var config = {
 		pkg : grunt.file.readJSON('package.json'),
-		clean: 'a random value'
-		
+		clean: 'a config example that will be overided by task.clean.js'
 	};
 
 	//IMPORT ALL CONFIGS 

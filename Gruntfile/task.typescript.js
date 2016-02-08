@@ -1,17 +1,18 @@
 /**
  * This module compile the raw typescript.
+ * Método: grunt typescript;
+ *
  */
 (function (controller) {
 
   controller.loadTask = function (grunt) {
 	grunt.loadNpmTasks("grunt-typescript");
-	grunt.registerTask("typescript", ['typescript']);
-
   };
 
   controller.loadConfig = function(config){
-  	
-  	config.typescript = {
+  	var helperConfig = require("./helper.config");
+
+  	return helperConfig.merge(config, 'typescript', {
 		options: {
 			module : 'commonjs'
 		},
@@ -19,8 +20,7 @@
 			src: ['./tasks/typescript/raw_typescript/*.ts'],
 			dest: './tasks/typescript/compiled_javascript'
 		}
-	};
-	return config;
+	});
   };
 
 
