@@ -3,6 +3,8 @@
 
 var taskClean = require("./Gruntfile/task.clean");
 var taskTypescript = require("./Gruntfile/task.typescript");
+var taskJshint = require("./Gruntfile/task.jshint");
+
 
 
 
@@ -17,7 +19,7 @@ module.exports = function (grunt) {
 	//IMPORT ALL CONFIGS 
 	taskClean.loadConfig(config);
 	taskTypescript.loadConfig(config);
-
+	taskJshint.loadConfig(config);
 
 
 	//INIT CONFIG
@@ -27,6 +29,6 @@ module.exports = function (grunt) {
 	//LOAD TASKS
 	taskClean.loadTask(grunt);
 	taskTypescript.loadTask(grunt);
-
+	taskJshint.loadTask(grunt);
 
 };
