@@ -16,6 +16,8 @@
   		options: {
   			//force: true // -- obriga o jshint a continuar, mesmo capturando erros.
   			//'-W033' : false // - esse comando ignora os ";" faltando. Comente essa linha e rode o grunt jshint para ver o erro voltar.
+  			//ignores : [file ]
+  			//reporterOutput : './jshint.txt' // Coloca o resultado em um arquivo.
   		},
   		files: ['./tasks/jshint/teste-erro.js']
   	});
