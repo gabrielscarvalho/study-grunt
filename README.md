@@ -1,5 +1,8 @@
 #Grunt separando as tasks.
 
+Baseado em: https://app.pluralsight.com/library/courses/grunt-introduction/table-of-contents
+
+
 ##Instalação
 1. Baixe as dependências: 
     npm install
