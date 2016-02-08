@@ -18,8 +18,18 @@
 		},
 		all: {
 			src: ['./tasks/typescript/raw_typescript/*.ts'],
-			dest: './tasks/typescript/compiled_javascript'
+			dest: './tasks/typescript/compiled_javascript' // para compilar em um arquivo, informe aqui o js.
 		}
+		/*
+		Remember to remove the 'all' node for testing this.
+		@note: just copied, wasnt checked.
+		specific_folder : {
+			src: ['./tasks/typescript/raw_typescript/specific_folder/*.ts'],
+			dest: './tasks/typescript/compiled_javascript/specifc_folder/onefile.js'
+		}
+
+
+		*/
 	});
   };
 
