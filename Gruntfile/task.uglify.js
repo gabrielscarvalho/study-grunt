@@ -22,8 +22,12 @@
             }]
         },
         options: {
-
-        }
+          mangle: false, //deve mudar o tamanho do nome das variáveis?
+          compress: {
+            drop_console: true // remove todos os console.log
+          },
+          beautify: true, //faz a compressão 'bonita', deixando o arquivo legível.
+        } 
 
     });
   };

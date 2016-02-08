@@ -1,1 +1,1 @@
-var pessoa=function(a,b,c){console.log(a+" "+b+" idade: "+c)};
+var pessoa=function(nome,sobrenome,idade){var nomeCompleto=nome+" "+sobrenome;return nomeCompleto+="."};

@@ -1,3 +1,6 @@
 var pessoa = function(nome, sobrenome, idade) {
-	console.log(nome + " " + sobrenome + " idade: " + idade);
+	var nomeCompleto = nome + " " + sobrenome;
+	nomeCompleto+= ".";
+	console.log(nomeCompleto + " idade: " + idade);
+	return nomeCompleto;
 }
