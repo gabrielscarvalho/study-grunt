@@ -13,7 +13,7 @@
   	var helperConfig = require("./helper.config");
 
   	return helperConfig.merge(config, 'clean',{
-		output: ['tasks/toBeCleaned/*']
+		output: ['tasks/clean/*']
 	});
 
   };

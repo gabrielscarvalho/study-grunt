@@ -10,8 +10,8 @@
 
         console.warn('\n------------------- RESOURCE OVERRING ---------------------------\n');
         console.warn('\tThe grunt.config.'+ nodeName +  ' is already loaded. Overiding...');
-        console.warn('\tOld: %O ' , globalConfig[nodeName]);
-        console.warn('\tNew: %O', nodeConfig);
+        console.warn('\t%O Old: ' , globalConfig[nodeName]);
+        console.warn('\t%O New: ', nodeConfig);
         console.warn('\n------------------- RESOURCE OVERRING ---------------------------\n');
       }
 
