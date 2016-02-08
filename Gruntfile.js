@@ -4,12 +4,12 @@
 var taskClean = require("./Gruntfile/task.clean");
 var taskTypescript = require("./Gruntfile/task.typescript");
 var taskJshint = require("./Gruntfile/task.jshint");
-
+var taskUglify = require("./Gruntfile/task.uglify");
 
 
 
 module.exports = function (grunt) {
-	
+
 
 	var config = {
 		pkg : grunt.file.readJSON('package.json'),
@@ -20,6 +20,8 @@ module.exports = function (grunt) {
 	taskClean.loadConfig(config);
 	taskTypescript.loadConfig(config);
 	taskJshint.loadConfig(config);
+	taskUglify.loadConfig(config);
+
 
 
 	//INIT CONFIG
@@ -30,5 +32,6 @@ module.exports = function (grunt) {
 	taskClean.loadTask(grunt);
 	taskTypescript.loadTask(grunt);
 	taskJshint.loadTask(grunt);
+	taskUglify.loadTask(grunt);
 
 };

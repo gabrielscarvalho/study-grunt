@@ -1,0 +1,1 @@
+var pessoa=function(a,b,c){console.log(a+" "+b+" idade: "+c)};
