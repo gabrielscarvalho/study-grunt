@@ -1,19 +1,26 @@
 'use strict';
 
 
+var taskClean = require("./Gruntfile/task.clean");
+
+
+
 module.exports = function (grunt) {
 	
 
-	grunt.initConfig({
+	var config = {
 		pkg : grunt.file.readJSON('package.json'),
-		clean : {
-			output: ['toBeCleaned/*']
-		}
-	});
+		
+	};
 
+	//IMPORT ALL CONFIGS 
+	taskClean.loadConfig(config);
 
+	//INIT CONFIG
+	grunt.initConfig(config);
+	
 
-	grunt.loadNpmTasks("grunt-contrib-clean");
-	grunt.registerTask("default", ['clean']);
+	//LOAD CLEAN TASK
+	taskClean.loadTask(grunt);
 
 };
